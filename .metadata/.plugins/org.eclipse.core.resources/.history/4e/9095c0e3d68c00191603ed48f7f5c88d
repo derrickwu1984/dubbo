@@ -1,0 +1,5 @@
+package com.wmx.gmall.service;
+
+public class OrderService {
+
+}

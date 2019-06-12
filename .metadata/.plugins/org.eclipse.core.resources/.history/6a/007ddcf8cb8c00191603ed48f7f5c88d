@@ -1,0 +1,5 @@
+package com.wmx.service;
+
+public interface UserService {
+
+}

@@ -1,0 +1,7 @@
+package com.wmx.gmall.service;
+
+public class OrderService {
+	
+	public void initOrder (String userId) ;
+
+}

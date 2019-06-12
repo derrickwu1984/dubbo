@@ -1,0 +1,11 @@
+package com.wmx.gmall.service;
+
+public interface OrderService {
+	UserService userService;
+	/*
+	 * ≥ı ºªØ∂©µ•
+	 * */
+	@Override
+	public void initOrder(String userId);
+
+}

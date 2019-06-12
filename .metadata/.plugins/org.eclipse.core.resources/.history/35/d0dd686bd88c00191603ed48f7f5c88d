@@ -1,0 +1,14 @@
+package com.wmx.gmall.service.impl;
+
+import com.wmx.gmall.service.OrderService;
+
+public class OrderServiceImpl implements OrderService {
+	
+	public void initOrder(String userId) {
+		// TODO Auto-generated method stub
+		//1、查询用户的收货地址
+		
+		
+	}
+
+}

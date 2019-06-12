@@ -1,0 +1,12 @@
+package com.wmx.gmall;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainApplication {
+	public static void main(String[] args) {
+		ApplicationContext ioc = new ClassPathXmlApplicationContext("provider.xml")
+	}
+	
+
+}
