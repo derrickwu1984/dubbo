@@ -1,0 +1,13 @@
+package com.wmx.gmall;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.wmx.gmall.service.OrderService;
+
+public class MainApplication {
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext applicationContext =new  ClassPathXmlApplicationContext("consumer.xml")
+		OrderService orderService = applicationContext.getBean(OrderService.class)
+	}
+
+}
