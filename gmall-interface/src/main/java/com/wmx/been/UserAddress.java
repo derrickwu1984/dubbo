@@ -16,7 +16,13 @@ public class UserAddress implements Serializable{
 		super();
 	}
 	public UserAddress(Integer id,String userAddress,String userId,String consignee,String phoneNum,String isDefault) {
-		
+		super();
+		this.id=id;
+		this.userAddress=userAddress;
+		this.userId=userId;
+		this.consignee=consignee;
+		this.phoneNum=phoneNum;
+		this.isDefault=isDefault;
 	}
 	public Integer getId() {
 		return id;

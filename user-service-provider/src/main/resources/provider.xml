@@ -16,4 +16,6 @@
 	<dubbo:service interface="com.wmx.gmall.service.UserService" ref="userServiceImpl"></dubbo:service>
 	<!-- 定义服务的实现class -->
 	<bean id="userServiceImpl" class="com.wmx.service.impl.UserServiceImpl"></bean>
+	<!--连接监控中心  -->
+	<dubbo:monitor protocol="registry"></dubbo:monitor>
 </beans>
