@@ -3,9 +3,13 @@ package com.wmx.service.impl;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
+import com.alibaba.dubbo.config.annotation.Service;
 import com.wmx.been.UserAddress;
 import com.wmx.gmall.service.UserService;
-
+@Service
+@Component
 public class UserServiceImpl implements UserService {
 
 	public List<UserAddress> getUserAddressList(String userId) {
