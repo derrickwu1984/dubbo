@@ -1,5 +1,0 @@
-package com.wmx.gmall.service;
-
-public interface OrderService {
-
-}

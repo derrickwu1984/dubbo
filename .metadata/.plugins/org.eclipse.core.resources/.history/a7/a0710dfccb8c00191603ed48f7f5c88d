@@ -1,7 +1,0 @@
-package com.wmx.service;
-
-public interface UserService {
-	
-	public List<UserAddress> getUserAddressList(String userId);
-
-}
