@@ -23,5 +23,44 @@
 	    <artifactId>curator-framework</artifactId>
 	    <version>2.12.0</version>
 	</dependency>
+<!-- spring事务,包含了@Transactional标注 -->	
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-tx</artifactId>
+		<version>4.0.3.RELEASE</version>
+	</dependency>	
+	
+	
+	<dependency>
+	    <groupId>org.mybatis</groupId>
+	    <artifactId>mybatis-spring</artifactId>
+	    <version>2.0.1</version>
+	</dependency>
+<!-- 要使用到mybatis，必须要用mybatis这个包 -->	
+	<dependency>
+	    <groupId>org.mybatis</groupId>
+	    <artifactId>mybatis</artifactId>
+	    <version>3.5.1</version>
+	</dependency>
+	<dependency>
+	    <groupId>com.alibaba</groupId>
+	    <artifactId>druid</artifactId>
+	    <version>1.1.16</version>
+	</dependency>
+	
+	<!-- mysqljdbc驱动 ,这个是数据库连接池需要的-->
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.0.5</version>
+	</dependency>	
+	
+<!-- 事务：DataSourceTransactionManager -->
+<dependency>
+<groupId>org.springframework</groupId>
+<artifactId>spring-jdbc</artifactId>
+<version>3.2.6.RELEASE</version>
+</dependency>	
+	
   </dependencies>
 </project>

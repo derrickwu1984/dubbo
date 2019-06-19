@@ -5,22 +5,24 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.wmx.been.UserAddress;
 import com.wmx.gmall.service.OrderService;
 import com.wmx.gmall.service.UserService;
 
 /*
- * 1¡¢½«·şÎñÌá¹©Õß×¢²áµ½×¢²áÖĞĞÄ(ÈçºÎ±©Â¶·şÎñ)
- * 		1£©¡¢µ¼ÈëdubboÒÀÀµ(2.6.2)£¬ÒıÈëzookeeper¿Í»§¶Ë
- * 2¡¢ÈÃ·şÎñÏû·ÑÕßÈ¥×¢²áÖĞĞÄ¶©ÔÄ·şÎñÌá¹©ÕßµÄ·şÎñµØÖ·
+ * 1ã€å°†æœåŠ¡æä¾›è€…æ³¨å†Œåˆ°æ³¨å†Œä¸­å¿ƒ(å¦‚ä½•æš´éœ²æœåŠ¡)
+ * 		1ï¼‰ã€å¯¼å…¥dubboä¾èµ–(2.6.2)ï¼Œå¼•å…¥zookeeperå®¢æˆ·ç«¯
+ * 2ã€è®©æœåŠ¡æ¶ˆè´¹è€…å»æ³¨å†Œä¸­å¿ƒè®¢é˜…æœåŠ¡æä¾›è€…çš„æœåŠ¡åœ°å€
  * */
 @Service
 public class OrderServiceImpl implements OrderService {
-	@Autowired
+//	@Autowired
+	@Reference
 	UserService userService;
 	public List<UserAddress> initOrder(String userId) {
 		// TODO Auto-generated method stub
-		//1¡¢²éÑ¯ÓÃ»§µÄÊÕ»õµØÖ·
+		//1ã€æŸ¥è¯¢ç”¨æˆ·çš„æ”¶è´§åœ°å€
 		List <UserAddress> addressList  = userService.getUserAddressList(userId);
 //		System.out.println(addressList);
 //		for (UserAddress userAddress : addressList) {

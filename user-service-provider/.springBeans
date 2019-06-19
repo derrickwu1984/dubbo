@@ -8,6 +8,9 @@
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
 		<config>src/main/resources/provider.xml</config>
+		<config>src/main/resources/com/conf/applicationContext.xml</config>
+		<config>src/main/resources/com/conf/MyBatis-Configuration.xml</config>
+		<config>src/main/resources/com/conf/UserDaoMapper.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

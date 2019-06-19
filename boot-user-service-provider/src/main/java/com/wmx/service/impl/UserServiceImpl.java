@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.wmx.been.UserAddress;
 import com.wmx.gmall.service.UserService;
-@Service
+@Service//暴露服务
 @Component
 public class UserServiceImpl implements UserService {
 
